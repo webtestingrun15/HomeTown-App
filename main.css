@@ -12,7 +12,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 header, nav, footer, section, article, div {
@@ -29,7 +29,7 @@ ul {
 /*
  *
  * Common
- * 
+ *
  */
 
 .news__more {
@@ -140,7 +140,6 @@ main {
  */
 
 .hero {
-  float: left;
   width: 480px;
   position: relative;
   background-image: url("./images/dog.jpg");
@@ -168,7 +167,6 @@ main {
  */
 
 .top-news {
-  float: right;
   width: 320px;
   height: 300px;
   border-bottom: 1px solid #E0E0E0;
@@ -215,7 +213,6 @@ main {
 
 .scores {
   width: 480px;
-  float: left;
   padding-top: 1em;
 }
 
@@ -226,7 +223,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .scores__table th {
@@ -263,7 +260,6 @@ main {
  */
 
 .weather {
-  float: right;
   width: 320px;
   padding: 1em;
 }
