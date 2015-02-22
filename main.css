@@ -21,7 +21,7 @@ header, nav, footer, section, article, div {
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 1.5em;
   margin: 0;
 }
 
@@ -88,7 +88,7 @@ ul {
 
 .nav__list {
   width: 100%;
-  padding: 0;
+  padding: 1.5em;
   margin: 0;
 }
 
@@ -170,7 +170,7 @@ main {
   width: 100%;
   height: 100%;
   border-bottom: 1px solid #E0E0E0;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .news__title {
@@ -182,7 +182,7 @@ main {
 
 .top-news__item {
   border-bottom: 1px solid #E0E0E0;
-  padding: 1em 0;
+  padding: 1.5em 0;
   line-height: 19.2px;
 }
 
@@ -213,7 +213,7 @@ main {
 
 .scores {
   width: 100%;
-  padding-top: 1em;
+  padding-top: 1.5em;
 }
 
 .scores__table {
@@ -223,7 +223,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .scores__table th {
@@ -261,7 +261,7 @@ main {
 
 .weather {
   width: 100%;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .weather__location {
@@ -316,7 +316,7 @@ main {
 
 .recent-news {
   clear: both;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .snippet {
@@ -353,7 +353,7 @@ main {
 
 footer {
   border-top: 1px solid #E0E0E0;
-  padding: 1em;
+  padding: 1.5em;
   width: 100%;
 }
 
