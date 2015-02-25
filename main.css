@@ -370,3 +370,34 @@ footer a {
   text-decoration: none;
   color: #333;
 }
+
+@media screen and (min-width: 530px) {
+  .top-news {
+    order: 2;
+  /*  width: 50%;*/
+}
+  .scores {
+    order: 3;
+    /*width: 50%;*/
+  }
+ .hero {
+    width: 67%;
+    order: 0;
+  }
+  .weather {
+    order: 1;
+    width: 33%;
+  }
+  .recent-news {
+    order: 4;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+  body, html {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
