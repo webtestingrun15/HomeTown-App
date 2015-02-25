@@ -399,16 +399,19 @@ footer a {
   }
   .top-news {
     width: 50%;
+    order: 1;
   }
   .weather {
     width: 50%;
+    order: 3;
   }
   .scores {
-    width: 50%
+    width: 50%;
+    order: 2;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   body, html {
     width: 800px;
     margin-left: auto;
