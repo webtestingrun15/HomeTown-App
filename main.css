@@ -381,17 +381,31 @@ footer a {
     /*width: 50%;*/
   }
  .hero {
-    width: 67%;
+    width: 60%;
     order: 0;
   }
   .weather {
     order: 1;
-    width: 33%;
+    width: 40%;
   }
   .recent-news {
     order: 4;
   }
+}
 
+@media screen and (min-width: 600px) {
+  .hero {
+    width: 50%;
+  }
+  .top-news {
+    width: 50%;
+  }
+  .weather {
+    width: 50%;
+  }
+  .scores {
+    width: 50%
+  }
 }
 
 @media screen and (min-width: 900px) {
