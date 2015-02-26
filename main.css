@@ -321,11 +321,11 @@ footer a {
         right: 1em;
     }
     .nav__item {
-        display: none;
+        display: block;
     }
     nav {
         width: 300px;
-        height: 50%;
+        height: 60%;
         position: absolute;
         -webkit-transform: translate (-300px, 0);
         transform: translate (-300px, 0);
