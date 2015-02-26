@@ -383,13 +383,13 @@ footer a {
         order: 1;
     }
     .weather {
-        width: 50%;
+        width: 40%;
         -webkit-order: 3;
         -ms-flex-order: 3;
         order: 3;
     }
     .scores {
-        width: 50%;
+        width: 60%;
         -webkit-order: 2;
         -ms-flex-order: 2;
         order: 2;
