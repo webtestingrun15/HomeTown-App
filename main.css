@@ -384,6 +384,12 @@ footer a {
         order: 4;
     }
 }
+@media screen and (min-width: 570px) {
+    p {
+      line-height: 1.2em;
+      font-size: .9em;
+    }
+}
 @media screen and (min-width: 600px) {
     .hero {
         width: 50%;
