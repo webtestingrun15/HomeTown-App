@@ -344,6 +344,11 @@ footer a {
         overflow-x: auto;
     }
 }
+@media screen and (max-width: 358px) {
+    footer ul {
+        display: inline;
+    }
+}
 @media screen and (min-width: 530px) {
     .top-news {
         -webkit-order: 2;
