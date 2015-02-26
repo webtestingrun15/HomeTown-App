@@ -1,8 +1,9 @@
 $(function() {
-  var $menu = $('.header__menu');
-  var $nav = $('.open');
+  var $menu = $('#menu');
+  var $drawer = $('.nav');
 
   $menu.click(function(event) {
-    $nav.toggle();
+    $drawer.toggleClass('open');
+    event.stopPropagation();
   });
 });
