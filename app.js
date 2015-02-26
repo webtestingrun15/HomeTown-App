@@ -1,6 +1,6 @@
 $(function() {
   var $menu = $('.header__menu');
-  var $nav = $('.nav__list');
+  var $nav = $('.open');
 
   $menu.click(function(event) {
     $nav.toggle();
