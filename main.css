@@ -135,7 +135,7 @@ main {
     position: relative;
     background-image: url("./images/ancestral-home.jpg");
     background-size: cover;
-    height: 300px;
+    height: 400px;
 }
 .hero article {
     box-sizing: border-box;
@@ -406,6 +406,7 @@ footer a {
 @media screen and (min-width: 600px) {
     .hero {
         width: 50%;
+        height: 300px;
     }
     .top-news {
         width: 50%;
