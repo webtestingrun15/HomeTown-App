@@ -288,6 +288,7 @@ main {
     width: 100px;
     float: left;
     margin-right: 1em;
+    padding-top: .3em;
 }
 .snippet__title {
     font-weight: 500;
