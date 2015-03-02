@@ -172,7 +172,7 @@ main {
 }
 .top-news__item {
     border-bottom: 1px solid #E0E0E0;
-    padding: 1.5em inherit;
+    padding: 1em 0;
 }
 .top-news__item:before {
     content: "» ";
