@@ -47,7 +47,7 @@ p {
     transition: min-height 0.3s;
 }
 .header__inner {
-    min-width: 40px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -74,13 +74,13 @@ p {
  */
 
 .nav {
-    min-width: 40px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 .nav__list {
     width: 100%;
-    padding: 1.5em;
+    padding: 0;
     margin: 0;
 }
 .nav__item {
@@ -109,7 +109,7 @@ p {
 
 main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-    min-width: 40px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -120,12 +120,7 @@ main {
  */
 
 .content {
-    width: 100%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 /*
@@ -173,6 +168,7 @@ main {
 .top-news__item {
     border-bottom: 1px solid #E0E0E0;
     padding: 1em 0;
+    line-height: 19.2px;
 }
 .top-news__item:before {
     content: "» ";
@@ -183,7 +179,7 @@ main {
 .top-news__item a {
     text-decoration: none;
     color: #666;
-    font-size: 1.1em;
+    padding: 1.5em inherit;
 }
 .top-news__item a:hover, .top-news__item a:active {
     text-decoration: underline;
@@ -195,10 +191,7 @@ main {
  */
 
 .scores {
-    width: 100%;
     padding-top: 1em;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 .scores__table {
@@ -206,7 +199,7 @@ main {
     border-collapse: collapse;
 }
 .scores__table th, .scores__table td {
-    padding: 1.5em;
+    padding: 1em;
 }
 .scores__table th {
     color: #fff;
@@ -235,10 +228,7 @@ main {
  */
 
 .weather {
-    width: 100%;
     padding: 1em;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
     flex-grow: 1;
 }
 .weather__location {
@@ -282,6 +272,7 @@ main {
  */
 
 .recent-news {
+    flex-grow: 1;
     clear: both;
     padding: 1.5em;
 }
@@ -293,7 +284,6 @@ main {
     width: 100px;
     float: left;
     margin-right: 1em;
-    padding-top: .3em;
 }
 .snippet__title {
     font-weight: 500;
@@ -301,6 +291,7 @@ main {
 .snippet__title a {
     text-decoration: none;
     color: #666;
+    padding: 1.5em inherit;
 }
 .snippet__title a:hover, .snippet__title a:active {
     text-decoration: underline;
@@ -326,23 +317,27 @@ footer a {
 }
 @media screen and (max-width: 430px) {
     .header__menu {
-        display: inline;
+        display: inline-block;
         position: absolute;
-        top: -1.5em;
-        right: 1em;
+        right: -40px;
+        top: -25px;
+        padding: 1em;
     }
     .nav__item {
         display: block;
     }
-    nav {
+    .nav {
+        z-index: 10;
+        background-color: #fff;
         width: 300px;
-        height: 60%;
         position: absolute;
+        /* This trasform moves the drawer off canvas. */
+
         -webkit-transform: translate(-300px, 0);
-        transition: -webkit-transform 0.3s ease;
+        transform: translate(-300px, 0);
+        /* Optionally, we animate the drawer. */
+
         transition: transform 0.3s ease;
-        z-index: 2;
-        background: #fff;
     }
     .nav.open {
         -webkit-transform: translate(0, 0);
@@ -351,14 +346,22 @@ footer a {
     .nav__list {
         padding: 0;
     }
-    .header__title {
-        font-size: 3em;
+    .nav__item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
     }
-    section.contained_table {
+    .header__title {
+        margin-left: 0;
+        font-size: 2em;
+        vertical-align: bottom;
+    }
+    .contained_table {
         width: 100%;
         overflow-x: auto;
     }
-    section.hero {
+    .hero {
         height: 320px;
         background-image: url('./images/ancestral-home-tiny.jpg');
         background-image: -webkit-image-set( url('./images/ancestral-home-tiny.jpg') 1x, url('./images/ancestral-home-tiny-2x.jpg') 2x);
@@ -444,4 +447,3 @@ footer a {
         margin-right: auto;
     }
 }
-
