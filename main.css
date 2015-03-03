@@ -120,8 +120,12 @@ main {
  */
 
 .content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
 /*
  *
@@ -192,7 +196,9 @@ main {
 
 .scores {
     padding-top: 1em;
-    flex-grow: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 .scores__table {
     width: 100%;
@@ -229,7 +235,9 @@ main {
 
 .weather {
     padding: 1em;
-    flex-grow: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 .weather__location {
     display: block;
@@ -272,7 +280,9 @@ main {
  */
 
 .recent-news {
-    flex-grow: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     clear: both;
     padding: 1.5em;
 }
@@ -336,6 +346,8 @@ footer a {
         -webkit-transform: translate(-300px, 0);
         transform: translate(-300px, 0);
         /* Optionally, we animate the drawer. */
+
+        transition: -webkit-transform 0.3s ease;
 
         transition: transform 0.3s ease;
     }
